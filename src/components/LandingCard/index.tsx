@@ -3,7 +3,7 @@ import React from "react";
 export default function LandingCard() {
   return (
     <div
-      className="flex w-full mb-2 p-4 text-white"
+      className="flex w-full mb-2 p-4 text-white bg-white"
       style={{
         background:
           "transparent linear-gradient(91deg, #042857 0%, #134280 100%) 0% 0% no-repeat padding-box",
@@ -18,7 +18,15 @@ export default function LandingCard() {
           instructions by Bike Guide
         </p>
       </div>
-      <div className="w-4/12">dsd</div>
+      <div
+        className="w-4/12 "
+        // style={{
+        //   backgroundImage:
+        //    ,
+        // }}
+      >
+        dsd
+      </div>
     </div>
   );
 }

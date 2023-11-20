@@ -7,12 +7,10 @@ import Registration from "../../components/Registration";
 export default function Home() {
   return (
     <div
-      className="text-white flex flex-col justify-between  px-4 bg-background-party h-screen bg-cover bg-center bg-no-repeat "
+      className="text-white flex flex-col justify-between  px-4 bg-background-party min-h-screen bg-cover bg-center bg-no-repeat "
       // style={{ backgroundSize: "100%" }}
     >
-      {/* <Modal>
-      <Registration/>
-      </Modal> */}
+       
 
       <div className="">
         <div className="flex justify-between items-center">

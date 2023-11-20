@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'background-party': "url('assets/background/images/Splash_Screen_Background_Party.png')",
-        'footer-texture': "url('/img/footer-texture.png')",
+        'header-party': "url('assets/background/images/Header_Screen_Background_Party.png')",
       }
     }
   },

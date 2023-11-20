@@ -3,13 +3,29 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Home from './pages/home';
+import Splash from './pages/splash';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Splash/>,
+  },
+  {
+    path: "/home",
+    element: <Home/>,
+  },
+]);
 root.render(
   <React.StrictMode>
-    <App />
+       <RouterProvider router={router} />
   </React.StrictMode>
 );
 
