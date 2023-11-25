@@ -1,31 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Home from './pages/home';
-import Splash from './pages/splash';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./pages/home";
+import Splash from "./pages/splash";
+import { PageModalContextProvider } from "./context/PageModalProvider";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Splash/>,
+    element: <Splash />,
   },
   {
     path: "/home",
-    element: <Home/>,
+    element: <Home />,
   },
 ]);
 root.render(
   <React.StrictMode>
-       <RouterProvider router={router} />
+    <PageModalContextProvider>
+      <RouterProvider router={router} />
+    </PageModalContextProvider>
   </React.StrictMode>
 );
 
