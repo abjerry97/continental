@@ -40,7 +40,7 @@ export default function Home() {
           <HomeDetails />
           <HomeDetails />
           <HomeDetails />
-          <div className=" my-4 text-center text-xs">
+          <div className=" my-4 text-center ContinentalStagSans-Light-Web text-xs">
             Imprint | Data privacy
           </div>
         </div>
