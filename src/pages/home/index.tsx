@@ -26,8 +26,8 @@ export default function Home() {
         </div>
         <div className="">
           <div className=" px-4 mb-8">
-            <p className="mb-4">
-              <span className=" font-bold"> Our eTravel Companion</span> created
+            <p className="mb-4 ContinentalStagSans-Medium-Web">
+              <span className=" font-bold "> Our eTravel Companion</span> created
               these in real time based on the requirements and interest you
               assigned to me, Lorem, Lorem, Lorem, Lorem, Lorem, …
             </p>

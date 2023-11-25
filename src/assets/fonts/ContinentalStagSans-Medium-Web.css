@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'ContinentalStagSansW';
+	src: url('ContinentalStagSans-Medium-Web.woff2') format('woff2'),
+		 url('ContinentalStagSans-Medium-Web.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	}
+
+.ContinentalStagSans-Medium-Web {
+	font-family: 'ContinentalStagSansW';
+	font-weight: 500;
+	font-style: normal;
+	}

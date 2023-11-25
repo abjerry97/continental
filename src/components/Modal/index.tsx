@@ -1,4 +1,3 @@
-import React from "react";
 import { usePageModal } from "../../context/PageModalProvider";
 
 export default function Modal(props:any) {
@@ -6,8 +5,8 @@ export default function Modal(props:any) {
   return (
     <>
       {isOpen ? (
-        <div className="inset-0 h-screen  fixed bg-black ">
-        <div className="h-[calc(100%-36px)] m-4 z-50 bg-white opacity-100 rounded-xl border-2 border-white overflow-hidden">
+        <div className="block m-auto items-center w-full md:w-6/12 lg:w-4/12 inset-0 h-screen  fixed bg-black ">
+        <div className="h-[calc(100%-36px)] m-3 z-50 bg-white opacity-100 rounded-xl border-2 border-white overflow-hidden">
           <button
             className="p-1 ml-auto bg-transparent border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
             onClick={() => toggleModalState()}
@@ -16,15 +15,10 @@ export default function Modal(props:any) {
               ×
             </span>
           </button>
-          {props.children}
+          <div className="">
+          {props.children}</div>
         </div></div>
       ) : (
-        // <button
-        //   className="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-        //   type="button"
-        //   onClick={() => toggleModalState(true)}
-        // > 
-        // </button>
         <></>
       )}
     </>

@@ -16,24 +16,22 @@ export default function Splash() {
             <div className="">{/* Continental */}</div>
           </div>
           <div className="  ">
-            <h3 className=" text">
-              <span className=" font-semibold"> Hello Friend,</span>
+            <h3 className="text-2xl text ContinentalStagSans-Medium-Web">
+              <span className=" font-semibold "> Hello Friend,</span>
               <br /> Great seeing you again!
             </h3>
           </div>
         </div>
 
-        <div className="  ">
-          <div className=" "></div>
+        <div className="  "> 
           <div className=" py-3">
-            <p className="mb-6 text-xs">
+            <p className="mb-6 ContinentalStagSans-Medium-Web">
               It’s nice meeting you at CES. It was pretty busy, wasn’t it? Let
               me explain our concept around the Continental eTravel Companion to
               you again at your leisure.
             </p>
-
             <PageBtn to="/home" text="Get started" />
-            <div className="text-center my-1 text-xs">
+            <div className="ContinentalStagSans-Light-Web text-center my-1 text-xs">
               Imprint | Data privacy
             </div>
           </div>

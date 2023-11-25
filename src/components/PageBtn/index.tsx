@@ -11,7 +11,7 @@ export default function PageBtn({ to, text, handleClick }: any) {
             //  return <Navigate to="/home" replace={true} />
           })
         }
-        className=" rounded-full w-full md:w-6/12 p-2 font-bold m-auto block self-center mb-4"
+        className="ContinentalStagSans-Medium-Web rounded-full text-black w-full md:w-6/12 p-2 font-bold m-auto block self-center mb-4"
         style={{ background: "#FFA500 0% 0% no-repeat padding-box" }}
       >
         {text || "Get started"}
