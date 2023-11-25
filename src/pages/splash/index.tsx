@@ -32,7 +32,7 @@ export default function Splash() {
               you again at your leisure.
             </p>
 
-            <PageBtn />
+            <PageBtn to="/home" text="Get started" />
             <div className="text-center my-1 text-xs">
               Imprint | Data privacy
             </div>
