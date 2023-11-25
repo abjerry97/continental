@@ -6,7 +6,7 @@ export default function Modal(props:any) {
   return (
     <>
       {isOpen ? (
-        <div className="inset-0 max-h-screen  fixed bg-black ">
+        <div className="inset-0 h-screen  fixed bg-black ">
         <div className="h-[calc(100%-36px)] m-4 z-50 bg-white opacity-100 rounded-xl border-2 border-white overflow-hidden">
           <button
             className="p-1 ml-auto bg-transparent border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"

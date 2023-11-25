@@ -24,14 +24,15 @@ export default function Registration() {
           informed first hand, share some information and we’ll inform you
           exclusively.
         </p>
-<div className="">
-        <FormInput name="" placeholder="First name" type="" />
-        <FormInput name="" placeholder="Last name (optional)" type="" />
-        <FormInput name="" placeholder="Email" type="email" />
-        <div className="flex gap-2 mt-10 mb-5">
-          <input type="checkbox" name="" id="" />{" "}
-          <p className="text-xs">Data privacy consent (Read more)</p>
-        </div></div>
+        <div className="">
+          <FormInput name="" placeholder="First name" type="" />
+          <FormInput name="" placeholder="Last name (optional)" type="" />
+          <FormInput name="" placeholder="Email" type="email" />
+          <div className="flex gap-2 mt-10 mb-5">
+            <input type="checkbox" name="" id="" />{" "}
+            <p className="text-xs">Data privacy consent (Read more)</p>
+          </div>
+        </div>
         <PageBtn />
       </div>
     </div>
