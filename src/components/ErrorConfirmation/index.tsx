@@ -10,7 +10,7 @@ export default function ErrorConfirmation() {
         <>
           {" "}
           Something went wrong.
-          <br /> Let’s try again."
+         Let’s try again."
         </>
       }
       message="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

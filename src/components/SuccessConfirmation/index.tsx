@@ -10,7 +10,7 @@ export default function SuccessConfirmation() {
       title={
         <>
           Thanks for you request. You will
-          <br /> shortly receive a confirmation.
+          shortly receive a confirmation.
         </>
       }
       message="    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

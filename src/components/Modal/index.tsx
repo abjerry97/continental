@@ -5,8 +5,8 @@ export default function Modal(props: any) {
   return (
     <>
       {isOpen ? (
-        <div className="block m-auto items-center w-full md:w-6/12 lg:w-4/12 inset-0 max-h-screen  fixed bg-black ">
-          <div className="h-[calc(100%-36px)] m-3 z-50 bg-white opacity-100 rounded-xl border-2 border-white overflow-hidden">
+        <div className="block m-auto items-center w-full md:w-6/12 lg:w-4/12 inset-0 min-h-screen  fixed bg-black">
+          <div className=" relative  overflow-scroll h-[calc(100%-36px)] m-3 z-50 bg-white opacity-100 rounded-xl border-2 border-white overflow-hidden">
             <button
               className="p-1 ml-auto bg-transparent border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
               onClick={() => closeModal()}
