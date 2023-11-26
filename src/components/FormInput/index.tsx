@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function FormInput({ name, type, placeholder, value }: any) {
   return (
     <div

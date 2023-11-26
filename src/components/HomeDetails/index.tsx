@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function HomeDetails({ data }: any) {
   return (
     <div className="bg-[#F0F0F0] mb-5 ContinentalStagSans-Medium-Web">

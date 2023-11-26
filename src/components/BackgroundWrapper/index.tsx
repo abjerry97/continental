@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function BackgroundWrapper(props: any) {
   const { children, background } = props;
   return (

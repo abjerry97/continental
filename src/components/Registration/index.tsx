@@ -1,11 +1,8 @@
-import React from "react";
 import FormInput from "../FormInput";
 import PageBtn from "../PageBtn";
 import FormCheckbox from "../FormCheckbox";
 import { usePageModal } from "../../context/PageModalProvider";
-import Confirmation from "../ConfirmationWrapper";
 import AuthModalWrapper from "../AuthModalWrapper";
-import ErrorConfirmation from "../ErrorConfirmation";
 import SuccessConfirmation from "../SuccessConfirmation";
 
 export default function Registration() {
@@ -37,7 +34,10 @@ export default function Registration() {
             </p>
           </div>
         </div>
-        <PageBtn text="Register now" handleClick={showModal(<SuccessConfirmation />)} />
+        <PageBtn
+          text="Register now"
+          handleClick={showModal(<SuccessConfirmation />)}
+        />
       </div>
     </AuthModalWrapper>
   );

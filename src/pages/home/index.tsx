@@ -1,9 +1,6 @@
-import React from "react";
 import PageBtn from "../../components/PageBtn";
-import Modal from "../../components/Modal";
 import Registration from "../../components/Registration";
 import { usePageModal } from "../../context/PageModalProvider";
-import HomeDetails from "../../components/HomeDetails";
 import Footer from "../../components/Footer";
 import PageWrapper from "../../components/PageWrapper";
 import BackgroundWrapper from "../../components/BackgroundWrapper";
@@ -12,8 +9,7 @@ export default function Home() {
   const { showModal } = usePageModal();
   return (
     <PageWrapper>
-      <BackgroundWrapper background="bg-landing-party">  
-      </BackgroundWrapper>
+      <BackgroundWrapper background="bg-landing-party"></BackgroundWrapper>
       <div className="">
         <div className=" px-4 mb-8">
           <p className="mb-4 ContinentalStagSans-Medium-Web">
@@ -30,7 +26,7 @@ export default function Home() {
           />
         </div>
 
-        <HomeDetailsWrapper/>
+        <HomeDetailsWrapper />
         <Footer />
       </div>
     </PageWrapper>

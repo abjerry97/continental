@@ -1,7 +1,7 @@
 import { usePageModal } from "../../context/PageModalProvider";
 
 export default function Modal(props: any) {
-  const { isOpen,showModal,closeModal ,modalConent } = usePageModal();
+  const { isOpen, closeModal, modalConent } = usePageModal();
   return (
     <>
       {isOpen ? (

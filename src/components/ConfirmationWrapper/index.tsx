@@ -1,7 +1,3 @@
-import React from "react";
-import FormInput from "../FormInput";
-import PageBtn from "../PageBtn";
-import ConfirmationImage from "../../assets/background/images/Confirmation/Illustration_Confirmed.png";
 import AuthModalWrapper from "../AuthModalWrapper";
 export default function ConfirmationLayout({
   title,

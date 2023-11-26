@@ -1,8 +1,4 @@
-import React from "react";
-import FormInput from "../FormInput";
-import PageBtn from "../PageBtn";
 import ErrorConfirmationImage from "../../assets/background/images/Confirmation/Illustration_Error.png";
-import AuthModalWrapper from "../AuthModalWrapper";
 import ConfirmationLayout from "../ConfirmationWrapper";
 import PageBtnWithLink from "../PageBtnWithLink";
 import { usePageModal } from "../../context/PageModalProvider";

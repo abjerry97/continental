@@ -1,5 +1,3 @@
-import React from "react";
-import PageBtn from "../../components/PageBtn";
 import Footer from "../../components/Footer";
 import PageWrapper from "../../components/PageWrapper";
 import PageBtnWithLink from "../../components/PageBtnWithLink";
@@ -26,7 +24,7 @@ export default function Splash() {
           </div>
         </div>
 
-        <div className="  "> 
+        <div className="  ">
           <div className=" py-3">
             <p className="mb-6 ContinentalStagSans-Medium-Web">
               It’s nice meeting you at CES. It was pretty busy, wasn’t it? Let
@@ -34,8 +32,8 @@ export default function Splash() {
               you again at your leisure.
             </p>
             <PageBtnWithLink to="/home" text="Get started" />
-            
-            <Footer/>
+
+            <Footer />
           </div>
         </div>
       </div>

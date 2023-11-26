@@ -1,8 +1,7 @@
 import {
   ReactNode,
   createContext,
-  useContext,
-  useEffect,
+  useContext, 
   useState,
 } from "react";
 
@@ -14,10 +13,14 @@ export const PageModalContextProvider = ({ children }: any) => {
 
   function showModal(component: ReactNode) {
     // setIsOpen(false)
-    return () =>{setIsOpen(true); setModalConent(component)};
+    return () => {
+      setIsOpen(true);
+      setModalConent(component);
+    };
   }
-  function closeModal() { 
-      setIsOpen(false); setModalConent(<div></div>)
+  function closeModal() {
+    setIsOpen(false);
+    setModalConent(<div></div>);
   }
 
   return (
