@@ -6,6 +6,7 @@ import { usePageModal } from "../../context/PageModalProvider";
 import Confirmation from "../ConfirmationWrapper";
 import AuthModalWrapper from "../AuthModalWrapper";
 import ErrorConfirmation from "../ErrorConfirmation";
+import SuccessConfirmation from "../SuccessConfirmation";
 
 export default function Registration() {
   const { showModal } = usePageModal();
@@ -36,7 +37,7 @@ export default function Registration() {
             </p>
           </div>
         </div>
-        <PageBtn handleClick={showModal(<ErrorConfirmation />)} />
+        <PageBtn text="Register now" handleClick={showModal(<SuccessConfirmation />)} />
       </div>
     </AuthModalWrapper>
   );
