@@ -10,7 +10,7 @@ export default function ErrorConfirmation() {
   const { closeModal } = usePageModal();
   return (
     <ConfirmationLayout
-      header={
+      title={
         <>
           {" "}
           Something went wrong.
