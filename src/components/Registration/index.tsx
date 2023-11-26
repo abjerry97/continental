@@ -1,21 +1,23 @@
 import React from "react";
 import FormInput from "../FormInput";
 import PageBtn from "../PageBtn";
+import FormCheckbox from "../FormCheckbox";
+import { usePageModal } from "../../context/PageModalProvider";
+import Confirmation from "../ConfirmationWrapper";
+import AuthModalWrapper from "../AuthModalWrapper";
+import ErrorConfirmation from "../ErrorConfirmation";
 
 export default function Registration() {
+  const { showModal } = usePageModal();
   return (
-    <div className=" container h-full">
-      <div
-        className=" bg-header-party  bg-cover bg-center p-4 bg-no-repeat h-52"
-        style={{
-          backgroundSize: "100% 100%", 
-        }}
-      >
-        <h3 className="font-semibold text-xl ContinentalStagSans-Medium-Web">
-          I’ll inform you <br/>about the next milestones
-        </h3>
-      </div>
-
+    <AuthModalWrapper
+      header={
+        <>
+          I’ll inform you <br />
+          about the next milestones
+        </>
+      }
+    >
       <div className="px-4 text-black flex flex-col justify-between ">
         <p className="text-black mb-4 text-sm ContinentalStagSans-Medium-Web mt-5">
           The developments of the Continental eTravel Companion is at full speed
@@ -27,13 +29,15 @@ export default function Registration() {
           <FormInput name="" placeholder="First name" type="" />
           <FormInput name="" placeholder="Last name (optional)" type="" />
           <FormInput name="" placeholder="Email" type="email" />
-          <div className="flex gap-2 mt-12 mb-6">
-            <input type="checkbox" name="" id="" />{" "}
-            <p className="text-xs">Data privacy consent (Read more)</p>
+          <div className="flex items-center gap-2 mt-12 mb-6">
+            <FormCheckbox />
+            <p className="text-xs ContinentalStagSans-Medium-Web">
+              Data privacy consent (Read more)
+            </p>
           </div>
         </div>
-        <PageBtn />
+        <PageBtn handleClick={showModal(<ErrorConfirmation />)} />
       </div>
-    </div>
+    </AuthModalWrapper>
   );
 }

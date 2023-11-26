@@ -1,11 +1,14 @@
 import React from "react";
 import PageBtn from "../../components/PageBtn";
+import Footer from "../../components/Footer";
+import PageWrapper from "../../components/PageWrapper";
+import PageBtnWithLink from "../../components/PageBtnWithLink";
 
 export default function Splash() {
   return (
-    <div className="flex items-center justify-center">
+    <PageWrapper>
       <div
-        className=" min-h-screen text-white flex flex-col justify-between  px-4 w-full md:w-8/12   lg:w-4/12 bg-background-party screen bg-cover bg-center bg-no-repeat "
+        className=" min-h-screen text-white flex flex-col justify-between  px-4 w-full bg-background-party bg-cover bg-center bg-no-repeat "
         style={{
           backgroundSize: "100% 100%",
         }}
@@ -30,13 +33,12 @@ export default function Splash() {
               me explain our concept around the Continental eTravel Companion to
               you again at your leisure.
             </p>
-            <PageBtn to="/home" text="Get started" />
-            <div className="ContinentalStagSans-Light-Web text-center my-1 text-xs">
-              Imprint | Data privacy
-            </div>
+            <PageBtnWithLink to="/home" text="Get started" />
+            
+            <Footer/>
           </div>
         </div>
       </div>
-    </div>
+    </PageWrapper>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react"; 
 import Registration from "../Registration";
-import Confirmation from "../Confirmation";
+import Confirmation from "../ConfirmationWrapper";
 
 export default function PopUps() {
   return (
